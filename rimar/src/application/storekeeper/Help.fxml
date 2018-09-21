@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.storekeeper.StorekeeperController">
+   <children>
+      <Label layoutX="359.0" layoutY="36.0" text="Súgó" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="38.0" layoutY="100.0" prefHeight="507.0" prefWidth="750.0" text="ÁTHELYEZÉS&#10;&#10;A raktáros át tud helyezni raklapot másik tárhelyre. A művelet csak akkor&#10;hajtható végre, ha az adott raklap nincs kitárolás alatt. A rendszer hibát jelezakkor is,&#10;ha az adott raklap már ki lett szállítva, azaz szállítólevélre került.Csak a rendszer&#10;által nyilvántartott tárhelypozícióra lehet áthelyezni, kivétel a három speciális&#10;tárhely: a KAPU, KAPU BEVET ÉS KAPUN MARADT ARUK. Ezekre a tárhelyekre nem lehet áthelyezni&#10;raklapot.&#10;&#10;MOZGATÁS&#10;&#10;A raktáros ebben a menüben tudja végrehajtani az adminisztrátor által létrehozott&#10;kitárolási feladatot. Először be kell lépnie a feladatba, ehhez meg kell adnia&#10;a kitárolási listán szereplő feladatszámot. Csak akkor tud belépni a feladatba,&#10;ha másik raktáros még nem lépett be, illetve még nincsen végrehajtva. Egy ki-&#10;tárolási listát egyszerre csak egy raktáros hajthat végre egyidejűleg. A listán&#10;szereplő palettáknak először az azonosítóját kell megadni, utána a rakaton sze-&#10;replő cikkszámot, végül a KAPU tárhelyet megerősítésként. A raktáros a kilépés&#10;a feladatból gombbal lép ki a feladatból, vagy ha a vissza gombra kattint.&#10;Ha közvetlenül bezárja az ablakot, a rendszer akkor is kilépteti a feladatból.&#10;&#10;ADAT ELLENŐR&#10;&#10;Paletta adatait lehet lekérdezni ebben a menüben. A raktárosnak csak valós, szállítólevelen&#10;még nem szereplő palettakódot kell megadnia. Az adatbevitel után a rendszer kiírja a &#10;raklaphoz tartozó fontos információkat, a termék cikkszámát, darabszámát, beérkezés&#10;időpontját, tárhelypozícióját valamint azt is, hogy jelenleg kitárolás alatt van-e.&#10;&#10;PALETTA VISSZA&#10;&#10;A kitárolási listán szereplő palettát tudja a raktáros visszavételezni, hogy ne kerüljön&#10;rá a szállítólevélre. Ha a szállítólevélre már felkerült az adott paletta, a paletta vissza&#10;már nem működik. A raktárosnak meg kell adnia a kívánt paletta azonosítóját, végül a &#10;KAPU tárhelyet. Ha a paletta még nem lezárt kitárolási listán szerepelt, akkor lekerül a&#10;listáról, és a paletta a KAPUN MARADT ARUK tárhelyre kerül. A paletta áthelyezhető másik&#10;tárhelyre. Egyéb esetben ha olyan raklapazonosítót adunk meg, ami nem valós, illetve&#10;nem szerepel egyetlen lezáratlan kitárolási feladatban sem, akkor hibaüzenetet ad.&#10; " AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btnOK" layoutX="376.0" layoutY="638.0" mnemonicParsing="false" onAction="#closeHelp" text="OK" AnchorPane.bottomAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblName" layoutX="48.0" layoutY="43.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

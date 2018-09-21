@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.administrator.PositionManagerController">
+   <children>
+      <Label layoutX="252.0" layoutY="24.0" text="Tárhelyek kezelése" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="107.0" text="Új tárhely hozzáadása">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPosition" layoutX="586.0" layoutY="164.0" />
+      <Button fx:id="btnAdd" layoutX="606.0" layoutY="220.0" mnemonicParsing="false" onAction="#addPosition" text="Hozzáadás">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Line endX="600.0" layoutX="151.0" layoutY="85.0" startX="-100.0" />
+      <Button fx:id="btnBack" layoutX="35.0" layoutY="836.0" mnemonicParsing="false" onAction="#back" text="Vissza" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblStatus" layoutX="498.0" layoutY="387.0" prefHeight="27.0" prefWidth="251.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCreateBarcode" layoutX="573.0" layoutY="292.0" mnemonicParsing="false" onAction="#generateBarcode" text="Vonalkód készítése">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgView" fitHeight="248.0" fitWidth="570.0" layoutX="115.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tblPositions" layoutX="51.0" layoutY="107.0" onMouseClicked="#selectCell" prefHeight="450.0" prefWidth="296.0">
+         <columns>
+            <TableColumn fx:id="positionId" prefWidth="119.0" text="Tárhelyazonosító" />
+            <TableColumn fx:id="positionName" prefWidth="175.0" text="Tárhelynév" />
+         </columns>
+      </TableView>
+      <Line endX="600.0" layoutX="151.0" layoutY="567.0" startX="-100.0" />
+   </children>
+</AnchorPane>

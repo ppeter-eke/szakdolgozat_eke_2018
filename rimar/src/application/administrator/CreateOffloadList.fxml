@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.administrator.CreateOffloadListController">
+   <children>
+      <Label layoutX="377.0" layoutY="25.0" text="Kitárolási lista készítése" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbPartners" layoutX="22.0" layoutY="86.0" onAction="#fillStockTable" prefHeight="25.0" prefWidth="234.0" promptText="Válasszon partnert" AnchorPane.leftAnchor="25.0" />
+      <TableView fx:id="tblStock" layoutX="24.0" layoutY="159.0" onMouseClicked="#selectStockRow" prefHeight="425.0" prefWidth="436.0" AnchorPane.leftAnchor="24.0">
+        <columns>
+          <TableColumn fx:id="stckPalletId" prefWidth="119.0" text="Palettaazonosító" />
+          <TableColumn fx:id="stckPalletPosition" prefWidth="110.0" text="Pozíció" />
+            <TableColumn fx:id="stckPartNo" prefWidth="122.0" text="Cikkszám" />
+            <TableColumn fx:id="stckPalletQuantity" prefWidth="84.0" text="Darabszám" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAddPallet" disable="true" layoutX="24.0" layoutY="605.0" mnemonicParsing="false" onAction="#addPallet" text="Hozzáadás">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="25.0" layoutY="761.0" mnemonicParsing="false" onAction="#back" text="Vissza" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblOffloadList" layoutX="574.0" layoutY="159.0" onMouseClicked="#selectOffloadRow" prefHeight="425.0" prefWidth="436.0" AnchorPane.rightAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="offldPalletId" prefWidth="119.0" text="Palettaazonosító" />
+          <TableColumn fx:id="offldPalletPosition" prefWidth="110.0" text="Pozíció" />
+            <TableColumn fx:id="offldPartNo" prefWidth="122.0" text="Cikkszám" />
+            <TableColumn fx:id="offldPalletQuantity" prefWidth="83.0" text="Darabszám" />
+        </columns>
+      </TableView>
+      <Label layoutX="192.0" layoutY="131.0" text="Kiadható készlet">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="715.0" layoutY="131.0" text="Kitárolási lista">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCreateOffloadList" disable="true" layoutX="858.0" layoutY="605.0" mnemonicParsing="false" onAction="#createOffloadList" text="Elkészítés" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemovePallet" disable="true" layoutX="539.0" layoutY="605.0" mnemonicParsing="false" onAction="#removePallet" text="Törlés">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRefreshStockList" layoutX="326.0" layoutY="605.0" mnemonicParsing="false" onAction="#fillStockTable" text="Lista frissítése">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtComments" layoutX="552.0" layoutY="671.0" prefHeight="30.0" prefWidth="436.0" promptText="Megjegyzés a raktárosnak" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblNumOfPallets" layoutX="730.0" layoutY="616.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

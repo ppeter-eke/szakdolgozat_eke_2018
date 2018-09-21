@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.storekeeper.StorekeeperController">
+   <children>
+      <Button fx:id="btnLogout" layoutX="834.0" layoutY="561.0" mnemonicParsing="false" onAction="#logout" text="Kijelentkezés" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="378.0" layoutY="32.0" text="RIMAR" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="302.0" layoutY="102.0" text="Üdvözöljük a raktáros mód főoldalán!" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="527.0" prefHeight="35.0" prefWidth="350.0" textAlignment="CENTER" AnchorPane.bottomAnchor="25.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPasswordChange" layoutX="705.0" layoutY="569.0" mnemonicParsing="false" onAction="#openPasswordChange" text="Jelszóváltoztatás" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRelocation" layoutX="276.0" layoutY="201.0" mnemonicParsing="false" onAction="#openRelocation" prefHeight="90.0" prefWidth="350.0" text="Áthelyezés" AnchorPane.bottomAnchor="510.0" AnchorPane.leftAnchor="276.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMovement" layoutX="276.0" layoutY="323.0" mnemonicParsing="false" onAction="#openMovement" prefHeight="90.0" prefWidth="350.0" text="Mozgatás" AnchorPane.bottomAnchor="380.0" AnchorPane.leftAnchor="276.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDataSupervisor" layoutX="276.0" layoutY="449.0" mnemonicParsing="false" onAction="#openDataSupervisor" prefHeight="90.0" prefWidth="350.0" text="Adat ellenőr" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="276.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPalletBack" layoutX="276.0" layoutY="577.0" mnemonicParsing="false" onAction="#openPalletBack" prefHeight="90.0" prefWidth="350.0" text="Paletta vissza" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="276.0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Label layoutX="332.0" layoutY="145.0" text="Válasszon az alábbi lehetőségek közül!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnHelp" layoutX="53.0" layoutY="60.0" mnemonicParsing="false" onAction="#openHelp" text="?" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

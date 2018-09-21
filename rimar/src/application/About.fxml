@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.LoginController">
+   <children>
+      <Label layoutX="207.0" layoutY="27.0" text="Névjegy" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="32.0" layoutY="75.0" prefHeight="259.0" prefWidth="450.0" text="A RIMAR raktári információs rendszer fő célja a RAMIR nevű&#10;rendszer fő funkcióinak implementálása Java nyelven, JavaFX&#10;köntösben. MySQL adatbázist használ az adatok tárolására.&#10;A szoftver három jogosultsági szinttel rendelkezik:&#10;raktáros, adminisztrátor és raktárvezető.&#10;&#10;Raktáros:&#10;-Paletta áthelyezése másik tárhelyre&#10;-Kitárolási feladat elvégzése&#10;-Paletta adatainak lekérdezése&#10;-Kitárolt, de még nem kiszállított paletta visszavételezése&#10;&#10;Adminisztrátor:&#10;-Termékek bevételezése&#10;-Termékek adatainak módosítása&#10;-Kitárolási lista készítése&#10;-Szállítólevél készítése&#10;-Készlet listák és leltári vaklista készítése&#10;-Tárhelyek kezelése&#10;-Új felhasználó hozzáadása&#10;&#10;Raktárvezető:&#10;-Teljesítményadatok lekérdezése&#10; Raktárkihasználtság, tárhelyhasználat partnerenként&#10; Kitárolt, és betárolt paletták száma napokra bontva&#10;-Eseménynapló megtekintése&#10;&#10;Ezt a programot a szakdolgozatom keretében készítettem,&#10;a címe: Raktári információs rendszer fejlesztése Java nyelven&#10;&#10;Eszterházy Károly Egyetem&#10;Alkalmazott Informatika Tanszék&#10;&#10;Konzulens: Dr. Pántya Róbert&#10;&#10;Gyöngyös, 2018&#10;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btnOK" layoutX="231.0" layoutY="345.0" mnemonicParsing="false" onAction="#closeAbout" text="OK" AnchorPane.bottomAnchor="25.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

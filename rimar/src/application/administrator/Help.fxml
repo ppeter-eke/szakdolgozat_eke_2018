@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.administrator.AdministratorController">
+   <children>
+      <Label layoutX="359.0" layoutY="36.0" text="Súgó" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="38.0" layoutY="100.0" prefHeight="507.0" prefWidth="750.0" text="TERMÉK BEVÉTELEZÉSE&#10;&#10;Új terméket lehet hozzáadni a készlethez. A partner kiválasztását követően az adatokat kell&#10;megadni. A rendszer ellenőrzi, hogy a megfelelő formátumú, és hosszúságú adat kerüljön be.&#10;A sikeres bevételezést egy felugró ablak erősíti meg, valamint a hozzátartozó vonalkód&#10;is elkészül az alkalmazás főkönyvtárában barcode_azonosító_cikkszám_darabszám.png&#10;formátumban.&#10;&#10;TERMÉK ADATAINAK MÓDOSÍTÁSA&#10;&#10;A partner kiválasztását követően kilistázza a hozzátartozó palettákat. Pirossal van jelölve&#10;a sérült (zárolt) rakat. Azonosítót és partnert nem lehet módosítani, csak az egyéb adatok&#10;(cikkszám, mennyiség, szállítólevél száma, rendszámok, státusz) módosíthatók, viszont&#10;törölni lehet a palettát abban az esetben, ha nem szerepel kitárolás alatt. Lehetőség van&#10;újból elkészíteni a paletta vonalkódját is.&#10;&#10;KITÁROLÁSI LISTA KÉSZÍTÉSE&#10;&#10;A bal oldali listában jelennek meg az adott partnerhez tartozó rakatok, a zárolt státuszú&#10;paletták nem jelennek meg. A felhasználó kiválasztja a kívánt raklapot, és a hozzáadás gomb&#10;segítségével berakja a kitárolandó raklapok közé a jobb oldali listába. Egy raklapot csak&#10;egyszer lehet hozzáadni a kitárolásli listához, valamint a törlés gombbal lehet kivenni&#10;a listából raklapokat.&#10;A megjegyzés a raktárosnak mezőbe írt szöveg meg fog jelenni a kitárolási lista .pdf&#10;formátumú változatában. Az elkészítés gombra kattintva elkészül a kitárolási lista, a pdf&#10;állomány pedig offloadlist_feladatszám_.pdf néven mentődik el.&#10;&#10;SZÁLLÍTÓLEVÉL KÉSZÍTÉSE&#10;&#10;A listák lekérése gombra kattintva megjelennek az aktuális kitárolási listák. Három féle&#10;módon színezheti a rendszer a kitárolási listákat:&#10;-Piros: A kitárolási lista még nincs kész, és/vagy már el lett kezdve, nem törölhető.&#10;-Zöld: A kitárolási lista végrehajtásra került, a szállítólevél elkészíthető.&#10;-Fekete: A kitárolási lista még nem lett elkezdve, törölhető a rendszerből.&#10;&#10;Az adott listára kattintva megjelenik a tartalma az alsó táblázatban. A szállítólevél&#10;elkészítéséhez még meg kell adni a teherautó rendszámát, illetve a pótkocsi rendszámát,&#10;ha van. Az elkészült szállítólevél deliverynote_szállítólevélszám.pdf formátumban&#10;készül el.&#10;&#10;KÉSZLET LISTÁK&#10;&#10;Partner kiválasztása után a listában megjelenik az összes hozzátartozó raklap. Egy adott&#10;cikkszámú raklapot ha kiválasztunk, és rákattintunk a készlet lista készítése gombra, akkor&#10;pdf formátumban elkészíti, és kilistázza az összes ilyen cikkszámú rakatot, a fájlnév:&#10;stocklist_cikkszám_.pdf&#10;A leltári vaklista készítése gombbal elkészíthetjük az adott partnerhez tartozó leltári&#10;vaklistát. A pdf állomány neve: blindlist_partnerNév_maiDátum_.pdf&#10;&#10;TÁRHELYEK KEZELÉSE&#10;&#10;A meglévő tárhelypozíciók listáját látjuk a bal oldali táblázatban, illetve tudunk hozzá-&#10;adni új tárhelyet is. A tárhely vonalkódja is elkészíthető. Fájlnév: barcode_tárhely_.png&#10;&#10;ÚJ FELHASZNÁLÓ HOZZÁADÁSA&#10;&#10;Új felhasználót tudunk hozzáadni a rendszerhez, először kiválasztjuk, hogy raktáros, vagy&#10;adminisztrátori jogosultságú felhasználót akarunk. A személyes adatok megadása után az új&#10;felhasználó bekerül a rendszerbe, az alapértelmezett jelszava a születési dátuma lesz&#10;ÉÉÉÉ-HH-NN formátumban (19800101). A felhasználó természetesen meg tudja változtatni a&#10;saját jelszavát a JELSZÓVÁLTOZTATÁS menüpontban.&#10;&#10;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btnOK" layoutX="376.0" layoutY="638.0" mnemonicParsing="false" onAction="#closeHelp" text="OK" AnchorPane.bottomAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblName" layoutX="48.0" layoutY="43.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
