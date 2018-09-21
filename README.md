@@ -1,5 +1,4 @@
 # szakdolgozat_eke_2018
-Raktári információs rendszer Java nyelven
 
 A RIMAR raktári információs rendszer fő célja a RAMIR nevű
 rendszer fő funkcióinak implementálása Java nyelven, JavaFX
