@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Szakdolgozat
+ * Raktári információs rendszer fejlesztése Java nyelven
+ *
+ * Eszterházy Károly Egyetem
+ * Alkalmazott Informatika Tanszék
+ *
+ * Készítette: Pálosi Péter gazdaságinformatikus BSc levelező tagozat
+ *
+ * Gyöngyös, 2018
+ *******************************************************************************/
+
 package application.storekeeper;
 
 import application.Event;

@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Szakdolgozat
+ * Raktári információs rendszer fejlesztése Java nyelven
+ *
+ * Eszterházy Károly Egyetem
+ * Alkalmazott Informatika Tanszék
+ *
+ * Készítette: Pálosi Péter gazdaságinformatikus BSc levelező tagozat
+ *
+ * Gyöngyös, 2018
+ *******************************************************************************/
+
 package application.warehousemanager;
 
 import java.sql.PreparedStatement;

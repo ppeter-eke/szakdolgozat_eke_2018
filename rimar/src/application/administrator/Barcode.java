@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Szakdolgozat
+ * Raktári információs rendszer fejlesztése Java nyelven
+ *
+ * Eszterházy Károly Egyetem
+ * Alkalmazott Informatika Tanszék
+ *
+ * Készítette: Pálosi Péter gazdaságinformatikus BSc levelező tagozat
+ *
+ * Gyöngyös, 2018
+ *******************************************************************************/
+
 
 // https://github.com/ajay04/Barcode_Java/blob/master/src/UI/MainViewController.java //
 

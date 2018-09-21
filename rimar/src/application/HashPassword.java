@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Szakdolgozat
+ * Raktári információs rendszer fejlesztése Java nyelven
+ *
+ * Eszterházy Károly Egyetem
+ * Alkalmazott Informatika Tanszék
+ *
+ * Készítette: Pálosi Péter gazdaságinformatikus BSc levelező tagozat
+ *
+ * Gyöngyös, 2018
+ *******************************************************************************/
+
 //	https://howtodoinjava.com/security/how-to-generate-secure-password-hash-md5-sha-pbkdf2-bcrypt-examples/	 //
 
 
